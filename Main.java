@@ -94,10 +94,10 @@ public class Main {
                     System.out.print("Enter the amount to deposit: ");
                     double depositAmount = scanner.nextDouble();
                     if (account.depositMoney(depositAmount)) {
-                        System.out.print("Withdraw successfully!\n");
+                        System.out.print("Deposit successfully!\n");
                     }
                     else {
-                        System.out.print("Withdraw unsuccessfully!\n");
+                        System.out.print("Deposit unsuccessfully!\n");
                     }
                     break;
                 case 2:
