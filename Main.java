@@ -93,12 +93,22 @@ public class Main {
                 case 1:
                     System.out.print("Enter the amount to deposit: ");
                     double depositAmount = scanner.nextDouble();
-                    account.depositMoney(depositAmount);
+                    if (account.depositMoney(depositAmount)) {
+                        System.out.print("Withdraw successfully!\n");
+                    }
+                    else {
+                        System.out.print("Withdraw unsuccessfully!\n");
+                    }
                     break;
                 case 2:
                     System.out.print("Enter the amount to withdraw: ");
                     double withdrawAmount = scanner.nextDouble();
-                    account.withdrawMoney(withdrawAmount);
+                    if (account.withdrawMoney(withdrawAmount)) {
+                        System.out.print("Withdraw successfully!\n");
+                    }
+                    else {
+                        System.out.print("Withdraw unsuccessfully!\n");
+                    }
                     break;
                 case 3:
                     double balance = account.checkBalance();
